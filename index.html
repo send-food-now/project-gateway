@@ -9,45 +9,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <!-- Chosen Palette: Warm Neutrals -->
-    <!-- Application Structure Plan: A classic single-page landing page designed to validate the core business idea by capturing interest from the two key user segments (Talent and Companies), as outlined in the "Concierge MVP" phase of the source report. The structure is a linear narrative: it starts with the high-level value proposition (Hero), explains the "Why" (Problem/Solution), and funnels users to a clear call-to-action (the sign-up forms). This top-down structure is optimal for quickly educating visitors and converting interest into actionable leads, which is the primary goal at this early stage. -->
-    <!-- Visualization & Content Choices: The application uses structured text sections and interactive forms instead of data visualizations, as its primary goal is informational and lead-generating. Report Info: Customer Segments (Talent, Companies) -> Goal: Validate interest & capture leads -> Presentation Method: Separate, clearly labeled sign-up forms -> Interaction: Users fill out and submit a form, receiving instant feedback via a JS-powered success message. Justification: This directly serves the MVP's goal of validating market demand from both sides of the platform before building a full-featured product. The content is directly adapted from the "Problem," "Solution," and "UVP" sections of the report to create a compelling narrative. -->
-    <!-- CONFIRMATION: NO SVG graphics used. NO Mermaid JS used. -->
     <style>
         body {
             font-family: 'Inter', sans-serif;
         }
-        .gemini-output h4 {
-            font-size: 1.125rem;
-            fnt-weight: 600;
-            margin-top: 1rem;
-            margin-bottom: 0.5rem;
-        }
-        .gemini-output ul {
-            list-style-type: disc;
-            padding-left: 1.5rem;
-            margin-bottom: 1rem;
-        }
-        .gemini-output li {
-            margin-bottom: 0.25rem;
-        }
-        .loader {
-            width: 24px;
-            height: 24px;
-            border: 3px solid #f3f3f3;
-            border-top: 3px solid #3b82f6;
-            border-radius: 50%;
-            animation: spin 1s linear infinite;
-        }
-        @keyframes spin {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
-        }
     </style>
 </head>
 <body class="bg-stone-50 text-stone-800">
-
     <div id="app" class="antialiased">
-
         <!-- Header -->
         <header class="bg-white/80 backdrop-blur-md sticky top-0 z-50 border-b border-stone-200">
             <div class="container mx-auto px-6 py-4 flex justify-between items-center">
@@ -61,7 +30,7 @@
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
                 </button>
             </div>
-             <!-- Mobile Menu -->
+            <!-- Mobile Menu -->
             <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
                 <a href="#problem" class="block py-2 text-stone-600 hover:text-blue-600">Work Abroad</a>
                 <a href="#solution" class="block py-2 text-stone-600 hover:text-blue-600">For US startups</a>
@@ -71,39 +40,39 @@
 
         <main>
            <!-- Hero Section -->
-<section class="bg-white py-16 md:py-20 min-h-[60vh] flex items-center">
-  <div class="container mx-auto px-6 text-center flex flex-col items-center justify-center">
-    <h1 class="text-4xl md:text-6xl font-bold text-stone-900 leading-tight">
-      Bridging Singapore Talent & American Innovation.
-    </h1>
-    <p class="mt-4 text-lg md:text-xl text-stone-600 max-w-3xl mx-auto">
-      We connect Singaporean professionals to career development opportunities at vetted US startups.
-    </p>
-    <div class="mt-8 flex justify-center gap-4">
-      <a href="#signup" class="bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold text-lg hover:bg-blue-700 transition-transform hover:scale-105">
-        Explore roles at US startups
-      </a>
-      <a href="#signup" class="bg-stone-200 text-stone-800 px-8 py-3 rounded-lg font-semibold text-lg hover:bg-stone-300 transition-transform hover:scale-105">
-        Hire fast via H1B1 visa
-      </a>
-    </div>
-  </div>
-</section>
+            <section class="bg-white py-16 md:py-20 min-h-[60vh] flex items-center">
+              <div class="container mx-auto px-6 text-center flex flex-col items-center justify-center">
+                <h1 class="text-4xl md:text-6xl font-bold text-stone-900 leading-tight">
+                  Bridging Singapore Talent & American Innovation.
+                </h1>
+                <p class="mt-4 text-lg md:text-xl text-stone-600 max-w-3xl mx-auto">
+                  We connect Singaporean professionals to career development opportunities at vetted US startups.
+                </p>
+                <div class="mt-8 flex justify-center gap-4">
+                  <a href="#signup" class="bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold text-lg hover:bg-blue-700 transition-transform hover:scale-105">
+                    Explore roles at US startups
+                  </a>
+                  <a href="#signup" class="bg-stone-200 text-stone-800 px-8 py-3 rounded-lg font-semibold text-lg hover:bg-stone-300 transition-transform hover:scale-105">
+                    Hire fast via H1B1 visa
+                  </a>
+                </div>
+              </div>
+            </section>
 
-<!-- Credibility Logos Section -->
-<section id="logos" class="bg-white py-16 md:py-24">
-  <div class="container mx-auto px-6 text-center">
-    <h2 class="text-3xl md:text-4xl font-bold text-stone-900 mb-12">Our Ecosystem</h2>
-    <div class="flex flex-col md:flex-row items-center justify-center gap-6">
-      <img src="y-combinator-logo-png-transparent.png" alt="Y-Combinator" class="h-24 w-auto">
-      <img src="a16z-logo.png" alt="a16z speedrun" class="h-24 w-auto">
-      <img src="sequoia-arc-logo.png" alt="Sequoia Arc" class="h-24 w-auto">
-      <img src="ntu-logo.png" alt="Nanyang Technological University" class="h-36 w-auto">
-      <img src="nus-logo.png" alt="National University of Singapore" class="h-36 w-auto">
-      <img src="sutd-logo.png" alt="Singapore University of Technology and Design" class="h-24 w-auto">
-    </div>
-  </div>
-</section>
+            <!-- Credibility Logos Section -->
+            <section id="logos" class="bg-white py-16 md:py-24">
+              <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold text-stone-900 mb-12">Our Ecosystem</h2>
+                <div class="flex flex-col md:flex-row items-center justify-center gap-6">
+                  <img src="y-combinator-logo-png-transparent.png" alt="Y-Combinator" class="h-24 w-auto">
+                  <img src="a16z-logo.png" alt="a16z speedrun" class="h-24 w-auto">
+                  <img src="sequoia-arc-logo.png" alt="Sequoia Arc" class="h-24 w-auto">
+                  <img src="ntu-logo.png" alt="Nanyang Technological University" class="h-36 w-auto">
+                  <img src="nus-logo.png" alt="National University of Singapore" class="h-36 w-auto">
+                  <img src="sutd-logo.png" alt="Singapore University of Technology and Design" class="h-24 w-auto">
+                </div>
+              </div>
+            </section>
             
             <!-- The Problem Section -->
             <section id="problem" class="py-16 md:py-24">
@@ -154,44 +123,45 @@
             </section>
 
             <!-- Signup Section -->
-<section id="signup" class="py-16 md:py-24">
-  <div class="container mx-auto px-6">
-    <div class="text-center mb-12">
-      <h2 class="text-3xl md:text-4xl font-bold text-stone-900">Speak with Our Advisors</h2>
-      <p class="mt-3 text-stone-600 max-w-2xl mx-auto">
-        Arrange a free 1:1 call to hear how we can help you accelerate your goals.
-      </p>
-    </div>
-    <div class="flex flex-col md:flex-row justify-center gap-4">
-      <!-- Button for Singaporean professionals -->
-      <a
-        href="https://docs.google.com/forms/d/e/1FAIpQLSff8qYgysq-VC7XGe2AnHnUZZ4NJ9OPEBzIufYfWcIbndOpEQ/viewform?usp=header"
-        target="_blank"
-        rel="noopener"
-        class="bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors"
-      >
-        Take Survey (Professionals)
-      </a>
-      <!-- Button for US startups -->
-      <a
-        href="https://docs.google.com/forms/d/e/1FAIpQLSeDWk-FNyb2GKBCMZfsQHYu0XRXySA5khLLgI81vq0E_97Oxg/viewform?usp=header"
-        target="_blank"
-        rel="noopener"
-        class="bg-stone-200 text-stone-800 px-8 py-3 rounded-lg font-semibold hover:bg-stone-300 transition-colors"
-      >
-        Start Hiring (US Startups)
-      </a>
-    </div>
-  </div>
-</section>
+            <section id="signup" class="py-16 md:py-24">
+              <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                  <h2 class="text-3xl md:text-4xl font-bold text-stone-900">Speak with Our Advisors</h2>
+                  <p class="mt-3 text-stone-600 max-w-2xl mx-auto">
+                    Arrange a free 1:1 call to hear how we can help you accelerate your goals.
+                  </p>
+                </div>
+                <div class="flex flex-col md:flex-row justify-center gap-4">
+                  <!-- Button for Singaporean professionals -->
+                  <a
+                    href="https://docs.google.com/forms/d/e/1FAIpQLSff8qYgysq-VC7XGe2AnHnUZZ4NJ9OPEBzIufYfWcIbndOpEQ/viewform?usp=header"
+                    target="_blank"
+                    rel="noopener"
+                    class="bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors"
+                  >
+                    Take Survey (Professionals)
+                  </a>
+                  <!-- Button for US startups -->
+                  <a
+                    href="https://docs.google.com/forms/d/e/1FAIpQLSeDWk-FNyb2GKBCMZfsQHYu0XRXySA5khLLgI81vq0E_97Oxg/viewform?usp=header"
+                    target="_blank"
+                    rel="noopener"
+                    class="bg-stone-200 text-stone-800 px-8 py-3 rounded-lg font-semibold hover:bg-stone-300 transition-colors"
+                  >
+                    Start Hiring (US Startups)
+                  </a>
+                </div>
+              </div>
+            </section>
 
-        <!-- Footer -->
-        <footer class="bg-stone-100 border-t border-stone-200 py-12">
-            <div class="container mx-auto px-6 text-center text-stone-600">
-                <p class="mt-2">Connecting Singaporeans with America's most innovative companies.</p>
-                <p class="mt-4 text-sm text-stone-500">&copy; 2025 Sheares Nexus. All rights reserved.</p>
-            </div>
-        </footer>
+            <!-- Footer -->
+            <footer class="bg-stone-100 border-t border-stone-200 py-12">
+                <div class="container mx-auto px-6 text-center text-stone-600">
+                    <p class="mt-2">Connecting Singaporeans with America's most innovative companies.</p>
+                    <p class="mt-4 text-sm text-stone-500">&copy; 2025 Sheares Nexus. All rights reserved.</p>
+                </div>
+            </footer>
+        </main>
     </div>
 
     <script>
@@ -201,124 +171,6 @@
             
             mobileMenuButton.addEventListener('click', () => {
                 mobileMenu.classList.toggle('hidden');
-            });
-
-            const talentTab = document.getElementById('talent-tab');
-            const companyTab = document.getElementById('company-tab');
-            const talentFormContainer = document.getElementById('talent-form-container');
-            const companyFormContainer = document.getElementById('company-form-container');
-            const talentForm = document.getElementById('talent-form');
-            const companyForm = document.getElementById('company-form');
-            const successMessage = document.getElementById('success-message');
-
-            function switchTabs(activeTab, inactiveTab, activeForm, inactiveForm) {
-                activeTab.classList.add('border-blue-600', 'text-blue-600');
-                activeTab.classList.remove('border-transparent', 'text-stone-500');
-
-                inactiveTab.classList.add('border-transparent', 'text-stone-500');
-                inactiveTab.classList.remove('border-blue-600', 'text-blue-600');
-                
-                activeForm.classList.remove('hidden');
-                inactiveForm.classList.add('hidden');
-                successMessage.classList.add('hidden');
-            }
-
-            talentTab.addEventListener('click', () => {
-                switchTabs(talentTab, companyTab, talentFormContainer, companyFormContainer);
-            });
-
-            companyTab.addEventListener('click', () => {
-                switchTabs(companyTab, talentTab, companyFormContainer, talentFormContainer);
-            });
-
-            function handleFormSubmit(event) {
-                event.preventDefault();
-                const form = event.target;
-                
-                talentFormContainer.classList.add('hidden');
-                companyFormContainer.classList.add('hidden');
-                successMessage.classList.remove('hidden');
-
-                setTimeout(() => {
-                    form.reset();
-                    switchTabs(talentTab, companyTab, talentFormContainer, companyFormContainer);
-                }, 4000);
-            }
-
-            talentForm.addEventListener('submit', handleFormSubmit);
-            companyForm.addEventListener('submit', handleFormSubmit);
-
-            // Gemini API Integration
-            const explorePathsBtn = document.getElementById('explore-paths-btn');
-            const generateJdBtn = document.getElementById('generate-jd-btn');
-            const talentExpertiseInput = document.getElementById('talent-expertise');
-            const jobTitleInput = document.getElementById('job-title');
-            const companyNameInput = document.getElementById('company-name');
-            const talentOutput = document.getElementById('talent-output');
-            const companyOutput = document.getElementById('company-output');
-            const talentLoader = document.getElementById('talent-loader');
-            const companyLoader = document.getElementById('company-loader');
-            
-            const apiKey = "AIzaSyDybfNlaXoFr6LIJoWZi4KLoNwGxm0E7E4"; 
-            const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-05-20:generateContent?key=${apiKey}`;
-
-            async function callGeminiAPI(prompt, loader, outputElement, button) {
-                loader.classList.remove('hidden');
-                button.disabled = true;
-                outputElement.innerHTML = '<p class="text-stone-500">Generating ideas...</p>';
-
-                const payload = {
-                    contents: [{ parts: [{ text: prompt }] }],
-                };
-                
-                try {
-                    const response = await fetch(apiUrl, {
-                        method: 'POST',
-                        headers: { 'Content-Type': 'application/json' },
-                        body: JSON.stringify(payload)
-                    });
-
-                    if (!response.ok) {
-                        throw new Error(`API error: ${response.statusText}`);
-                    }
-                    
-                    const result = await response.json();
-                    const text = result.candidates?.[0]?.content?.parts?.[0]?.text;
-                    
-                    if (text) {
-                        outputElement.innerHTML = text.replace(/\n/g, '<br>');
-                    } else {
-                        outputElement.innerHTML = '<p class="text-red-500">Could not generate a response. Please try again.</p>';
-                    }
-
-                } catch (error) {
-                    console.error("Gemini API call failed:", error);
-                    outputElement.innerHTML = `<p class="text-red-500">An error occurred. Please check the console for details.</p>`;
-                } finally {
-                    loader.classList.add('hidden');
-                    button.disabled = false;
-                }
-            }
-
-            explorePathsBtn.addEventListener('click', () => {
-                const expertise = talentExpertiseInput.value.trim();
-                if (!expertise) {
-                    talentOutput.innerHTML = '<p class="text-red-500">Please enter your field of work first.</p>';
-                    return;
-                }
-                const prompt = `As a career advisor for Singaporean talent looking to move to the US, generate potential career in US startups for someone with expertise in "${expertise}". For each path, list key skills to highlight. Format the response as simple HTML with <h4> for titles and <ul> for lists. Provide 2-3 career paths in the US startup ecosystem.`;
-                callGeminiAPI(prompt, talentLoader, talentOutput, explorePathsBtn);
-            });
-
-            generateJdBtn.addEventListener('click', () => {
-                const jobTitle = jobTitleInput.value.trim();
-                const companyName = companyNameInput.value.trim() || 'our company';
-                if (!jobTitle) {
-                    companyOutput.innerHTML = '<p class="text-red-500">Please enter a job title first.</p>';
-                    return;
-                }
-                const prompt = `As a recruiter for ${companyName}, a US-based startup, write a compelling job description for a "${jobTitle}" position. The description should be welcoming and designed to attract top early-career talent from Singapore. Highlight the opportunity and growth potential of your startup. Format the response as simple HTML with <h4> for sections and <ul> for responsibilities/qualifications.`;
-                callGeminiAPI(prompt, companyLoader, companyOutput, generateJdBtn);
             });
         });
     </script>
