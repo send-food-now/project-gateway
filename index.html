@@ -1,178 +1,33 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sheares Nexus: Bridging Global Human Capital</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <!-- Chosen Palette: Warm Neutrals -->
-    <style>
-        body {
-            font-family: 'Inter', sans-serif;
-        }
-    </style>
+    <title>Send Food Now</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body class="bg-stone-50 text-stone-800">
-    <div id="app" class="antialiased">
-        <!-- Header -->
-        <header class="bg-white/80 backdrop-blur-md sticky top-0 z-50 border-b border-stone-200">
-            <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-                <a href="#" class="text-2xl font-bold text-blue-600">Sheares Nexus</a>
-                <nav class="hidden md:flex items-center space-x-6">
-                    <a href="#problem" class="text-stone-600 hover:text-blue-600 transition-colors">Work Abroad</a>
-                    <a href="#solution" class="text-stone-600 hover:text-blue-600 transition-colors">For US startups</a>
-                    <a href="#signup" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors">Speak with Us</a>
-                </nav>
-                <button id="mobile-menu-button" class="md:hidden text-stone-600">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
-                </button>
-            </div>
-            <!-- Mobile Menu -->
-            <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
-                <a href="#problem" class="block py-2 text-stone-600 hover:text-blue-600">Work Abroad</a>
-                <a href="#solution" class="block py-2 text-stone-600 hover:text-blue-600">For US startups</a>
-                <a href="#signup" class="block mt-2 bg-blue-600 text-white text-center px-4 py-2 rounded-lg hover:bg-blue-700">Speak with Us</a>
-            </div>
-        </header>
-
-        <main>
-           <!-- Hero Section -->
-            <section class="bg-white py-16 md:py-20 min-h-[60vh] flex items-center">
-              <div class="container mx-auto px-6 text-center flex flex-col items-center justify-center">
-                <h1 class="text-4xl md:text-6xl font-bold text-stone-900 leading-tight">
-                  Bridging Singapore Talent & American Innovation.
-                </h1>
-                <p class="mt-4 text-lg md:text-xl text-stone-600 max-w-3xl mx-auto">
-                  We connect Singaporean professionals to career development opportunities at vetted US startups.
-                </p>
-                <div class="mt-8 flex justify-center gap-4">
-                  <a href="#signup" class="bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold text-lg hover:bg-blue-700 transition-transform hover:scale-105">
-                    Explore roles at US startups
-                  </a>
-                  <a href="#signup" class="bg-stone-200 text-stone-800 px-8 py-3 rounded-lg font-semibold text-lg hover:bg-stone-300 transition-transform hover:scale-105">
-                    Hire fast via H1B1 visa
-                  </a>
-                </div>
-              </div>
-            </section>
-
-            <!-- Credibility Logos Section -->
-            <section id="logos" class="bg-white py-16 md:py-24">
-              <div class="container mx-auto px-6 text-center">
-                <h2 class="text-3xl md:text-4xl font-bold text-stone-900 mb-12">Our Ecosystem</h2>
-                <div class="flex flex-col md:flex-row items-center justify-center gap-6">
-                  <img src="y-combinator-logo-png-transparent.png" alt="Y-Combinator" class="h-24 w-auto">
-                  <img src="a16z-logo.png" alt="a16z speedrun" class="h-24 w-auto">
-                  <img src="sequoia-arc-logo.png" alt="Sequoia Arc" class="h-24 w-auto">
-                  <img src="ntu-logo.png" alt="Nanyang Technological University" class="h-36 w-auto">
-                  <img src="nus-logo.png" alt="National University of Singapore" class="h-36 w-auto">
-                  <img src="sutd-logo.png" alt="Singapore University of Technology and Design" class="h-24 w-auto">
-                </div>
-              </div>
-            </section>
-            
-            <!-- The Problem Section -->
-            <section id="problem" class="py-16 md:py-24">
-                <div class="container mx-auto px-6">
-                    <div class="text-center mb-12">
-                        <h2 class="text-3xl md:text-4xl font-bold text-stone-900">Innovation requires a unique mix of Tenacity, Teamwork, and Talent</h2>
-                        <p class="mt-3 text-stone-600 max-w-2xl mx-auto">We're here to help make that possible.</p>
-                    </div>
-                    <div class="grid md:grid-cols-2 gap-8 md:gap-12">
-                        <div class="bg-white p-8 rounded-xl border border-stone-200 shadow-sm">
-                            <h3 class="text-2xl font-semibold text-stone-900">For Singaporean Professionals</h3>
-                            <ul class="mt-4 space-y-3 text-stone-600">
-                                <li class="flex items-start"><span class="text-blue-500 mr-3 mt-1">✓</span><span><strong class="text-stone-700">Access to Vetted Startup Roles:</strong> We curate high-potential opportunities for your next career move.</span></li>
-                                <li class="flex items-start"><span class="text-blue-500 mr-3 mt-1">✓</span><span><strong class="text-stone-700">Get help with Navigation:</strong> Backed by our experiences studying, working, and living in the US.</span></li>
-                                <li class="flex items-start"><span class="text-blue-500 mr-3 mt-1">✓</span><span><strong class="text-stone-700">Value-added Services:</strong> Get help with relocation, career development, and support for contingencies during your stint.</span></li>
-                            </ul>
-                        </div>
-                        <div class="bg-white p-8 rounded-xl border border-stone-200 shadow-sm">
-                            <h3 class="text-2xl font-semibold text-stone-900">For US Startups</h3>
-                            <ul class="mt-4 space-y-3 text-stone-600">
-                                <li class="flex items-start"><span class="text-blue-500 mr-3 mt-1">✓</span><span><strong class="text-stone-700">Build Your Team with Us:</strong> We help qualify talents from Singapore's vibrant startup ecosystem.</span></li>
-                                <li class="flex items-start"><span class="text-blue-500 mr-3 mt-1">✓</span><span><strong class="text-stone-700">Fast and Frictionless Hiring:</strong> Skip H1B lottery and land Singaporean hires via H-1B1 visa within 6 to 12 weeks.</span></li>
-                                <li class="flex items-start"><span class="text-blue-500 mr-3 mt-1">✓</span><span><strong class="text-stone-700">Success-based Fees only:</strong> Aligning our interests with high-growth, early-stage startups.</span></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- The Solution Section -->
-            <section id="solution" class="bg-white py-16 md:py-24">
-                <div class="container mx-auto px-6">
-                    <div class="text-center mb-12">
-                        <h2 class="text-3xl md:text-4xl font-bold text-stone-900">We are buiding an end-to-end talent gateway between Singapore and the US.</h2>
-                        <p class="mt-3 text-stone-600 max-w-2xl mx-auto">Our goal is to drive global innovation by simplifying skilled talent mobility.</p>
-                    </div>
-                    <div class="grid md:grid-cols-2 gap-8 md:gap-12">
-                        <div class="bg-stone-50 p-8 rounded-xl border border-stone-200">
-                            <h3 class="text-2xl font-semibold text-stone-900">Our Promise to Our Members</h3>
-                            <p class="mt-4 text-stone-600">We strive to help expand your professional horizons and identify best-fit opportunities in dynamic US startups.</p>
-                        </div>
-                        <div class="bg-stone-50 p-8 rounded-xl border border-stone-200">
-                            <h3 class="text-2xl font-semibold text-stone-900">Our Promise to Prospective Hirers</h3>
-                            <p class="mt-4 text-stone-600">We strive to help you achieve your startup's mission by connecting you to Southeast Asia's best talent ecosystem. </p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Signup Section -->
-            <section id="signup" class="py-16 md:py-24">
-              <div class="container mx-auto px-6">
-                <div class="text-center mb-12">
-                  <h2 class="text-3xl md:text-4xl font-bold text-stone-900">Speak with Our Advisors</h2>
-                  <p class="mt-3 text-stone-600 max-w-2xl mx-auto">
-                    Arrange a free 1:1 call to hear how we can help you accelerate your goals.
-                  </p>
-                </div>
-                <div class="flex flex-col md:flex-row justify-center gap-4">
-                  <!-- Button for Singaporean professionals -->
-                  <a
-                    href="https://docs.google.com/forms/d/e/1FAIpQLSff8qYgysq-VC7XGe2AnHnUZZ4NJ9OPEBzIufYfWcIbndOpEQ/viewform?usp=header"
-                    target="_blank"
-                    rel="noopener"
-                    class="bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors"
-                  >
-                    Take Survey (Professionals)
-                  </a>
-                  <!-- Button for US startups -->
-                  <a
-                    href="https://docs.google.com/forms/d/e/1FAIpQLSeDWk-FNyb2GKBCMZfsQHYu0XRXySA5khLLgI81vq0E_97Oxg/viewform?usp=header"
-                    target="_blank"
-                    rel="noopener"
-                    class="bg-stone-200 text-stone-800 px-8 py-3 rounded-lg font-semibold hover:bg-stone-300 transition-colors"
-                  >
-                    Start Hiring (US Startups)
-                  </a>
-                </div>
-              </div>
-            </section>
-
-            <!-- Footer -->
-            <footer class="bg-stone-100 border-t border-stone-200 py-12">
-                <div class="container mx-auto px-6 text-center text-stone-600">
-                    <p class="mt-2">Connecting Singaporeans with America's most innovative companies.</p>
-                    <p class="mt-4 text-sm text-stone-500">&copy; 2025 Sheares Nexus. All rights reserved.</p>
-                </div>
-            </footer>
-        </main>
-    </div>
-
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const mobileMenuButton = document.getElementById('mobile-menu-button');
-            const mobileMenu = document.getElementById('mobile-menu');
-            
-            mobileMenuButton.addEventListener('click', () => {
-                mobileMenu.classList.toggle('hidden');
-            });
-        });
-    </script>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">US tech firms</a></li>
+        </ul>
+    </nav>
+    <header>
+        <h1>Welcome to Send Food Now</h1>
+        <p>Partnering with US tech firms to revolutionize food delivery.</p>
+    </header>
+    <section id="problem">
+        <h2>Challenges Faced by US tech firms</h2>
+        <p>Many US tech firms struggle with efficient food delivery solutions.</p>
+    </section>
+    <section id="solution">
+        <h2>Our Solution</h2>
+        <p>We provide tailored services for US tech firms to enhance their delivery systems.</p>
+    </section>
+    <section id="signup">
+        <h2>Join Us</h2>
+        <button>Sign up with US tech firms</button>
+    </section>
+    <script src="script.js"></script>
 </body>
 </html>
